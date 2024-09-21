@@ -45,7 +45,7 @@ INSTALLED_APPS = [
     'forum',
 ]
 
-AUTHENTICATION_BACKENDS = (
+AUTHENTICATION_BACKENDS = ('codex-api-3f893f5716ef.herokuapp.com',
     'allauth.account.auth_backends.AuthenticationBackend',
 )
 
