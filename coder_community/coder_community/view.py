@@ -7,3 +7,4 @@ class CustomLoginView(LoginView):
 
 class CustomLogoutView(LogoutView):
     template_name = 'registration/logged_out.html'
+
