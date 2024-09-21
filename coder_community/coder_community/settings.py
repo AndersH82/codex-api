@@ -14,7 +14,8 @@ SECRET_KEY = 'django-insecure-)fyfz$0o^7wx+lj+=t7w8q*l$=9!sgg=nezn5c3+in98lfxoq!
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['8000-andersh82-codexapi-gtma34ncj6h.ws-eu116.gitpod.io']
+ALLOWED_HOSTS = ['codex-api-3f893f5716ef.herokuapp.com',
+                 '8000-andersh82-codexapi-gtma34ncj6h.ws-eu116.gitpod.io']
 
 REST_FRAMEWORK = {
     'DEFAULT_AUTHENTICATION_CLASSES': (
@@ -45,7 +46,7 @@ INSTALLED_APPS = [
     'forum',
 ]
 
-AUTHENTICATION_BACKENDS = ('codex-api-3f893f5716ef.herokuapp.com',
+AUTHENTICATION_BACKENDS = (
     'allauth.account.auth_backends.AuthenticationBackend',
 )
 
