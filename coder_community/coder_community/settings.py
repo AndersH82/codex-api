@@ -23,6 +23,19 @@ CORS_ALLOWED_ORIGINS = [
     'http://127.0.0.1:8000',
 ]
 
+CORS_ALLOW_HEADERS = [
+    'Content-Type',
+    'Authorization',
+]
+
+CORS_ALLOW_METHODS = [
+    'GET',
+    'POST',
+    'PUT',
+    'DELETE',
+    'OPTIONS',
+]
+
 REST_FRAMEWORK = {
     'DEFAULT_AUTHENTICATION_CLASSES': (
         'rest_framework.authentication.TokenAuthentication',
@@ -35,6 +48,7 @@ REST_FRAMEWORK = {
 CSRF_TRUSTED_ORIGINS = [
     'https://8000-andersh82-codexapi-gtma34ncj6h.ws-eu116.gitpod.io',
 ]
+
 
 # Application definition
 
