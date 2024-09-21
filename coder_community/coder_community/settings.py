@@ -18,7 +18,7 @@ ALLOWED_HOSTS = ['codex-api-3f893f5716ef.herokuapp.com',
                  '8000-andersh82-codexapi-gtma34ncj6h.ws-eu116.gitpod.io']
 
 CORS_ALLOWED_ORIGINS = [
-    'https://https://3000-andersh82-codex-4hpqxrlag5z.ws-eu116.gitpod.io/',
+    'https://3000-andersh82-codex-4hpqxrlag5z.ws-eu116.gitpod.io/',
     'http://localhost:3000',
     'http://127.0.0.1:8000',
 ]
@@ -59,6 +59,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'corsheaders',
     'rest_framework',
     'rest_framework.authtoken',
     'rest_auth',
@@ -74,6 +75,7 @@ AUTHENTICATION_BACKENDS = (
 )
 
 MIDDLEWARE = [
+    'corsheaders.middleware.CorsMiddleware',
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
