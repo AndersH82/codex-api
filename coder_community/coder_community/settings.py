@@ -26,6 +26,9 @@ REST_FRAMEWORK = {
     ),
 }
 
+CSRF_TRUSTED_ORIGINS = [
+    'https://8000-andersh82-codexapi-gtma34ncj6h.ws-eu116.gitpod.io',
+]
 
 # Application definition
 
