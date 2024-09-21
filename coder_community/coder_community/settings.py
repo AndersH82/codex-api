@@ -4,7 +4,6 @@ import os
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
-
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/5.1/howto/deployment/checklist/
 
@@ -14,15 +13,16 @@ SECRET_KEY = 'django-insecure-)fyfz$0o^7wx+lj+=t7w8q*l$=9!sgg=nezn5c3+in98lfxoq!
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['codex-api-3f893f5716ef.herokuapp.com',
-                 '8000-andersh82-codexapi-gtma34ncj6h.ws-eu116.gitpod.io']
+ALLOWED_HOSTS = [
+    'codex-api-3f893f5716ef.herokuapp.com',
+    '8000-andersh82-codexapi-gtma34ncj6h.ws-eu116.gitpod.io'
+]
 
 CORS_ALLOWED_ORIGINS = [
-    'https://3000-andersh82-codex-4hpqxrlag5z.ws-eu116.gitpod.io/',
+    'https://3000-andersh82-codex-4hpqxrlag5z.ws-eu116.gitpod.io',
     'http://localhost:3000',
     'http://127.0.0.1:8000',
 ]
-
 
 CORS_ALLOW_HEADERS = [
     'Content-Type',
@@ -50,9 +50,7 @@ CSRF_TRUSTED_ORIGINS = [
     'https://8000-andersh82-codexapi-gtma34ncj6h.ws-eu116.gitpod.io',
 ]
 
-
 # Application definition
-
 INSTALLED_APPS = [
     'django.contrib.admin',
     'django.contrib.auth',
@@ -107,10 +105,8 @@ TEMPLATES = [
 
 WSGI_APPLICATION = 'coder_community.wsgi.application'
 
-
 # Database
 # https://docs.djangoproject.com/en/5.1/ref/settings/#databases
-
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
@@ -118,10 +114,8 @@ DATABASES = {
     }
 }
 
-
 # Password validation
 # https://docs.djangoproject.com/en/5.1/ref/settings/#auth-password-validators
-
 AUTH_PASSWORD_VALIDATORS = [
     {
         'NAME': 'django.contrib.auth.password_validation.UserAttributeSimilarityValidator',
@@ -137,29 +131,21 @@ AUTH_PASSWORD_VALIDATORS = [
     },
 ]
 
-
 # Internationalization
 # https://docs.djangoproject.com/en/5.1/topics/i18n/
-
 LANGUAGE_CODE = 'en-us'
-
 TIME_ZONE = 'UTC'
-
 USE_I18N = True
-
 USE_TZ = True
-
 
 MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/5.1/howto/static-files/
-
-STATIC_URL = 'static/'
+STATIC_URL = '/static/'
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.1/ref/settings/#default-auto-field
-
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
