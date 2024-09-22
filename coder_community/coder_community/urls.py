@@ -7,5 +7,7 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('', RedirectView.as_view(url='/admin/login/'), name='login'),
     path('logout/', auth_views.LogoutView.as_view(next_page='/admin/login/'), name='logout'),
-    path('forum/', include('forum.urls')),
+    path('posts/', include('forum.urls')),
+    path('auth/', include('dj_rest_auth.urls')),
+    path('auth/registration/', include('dj_rest_auth.registration.urls')),
 ]
