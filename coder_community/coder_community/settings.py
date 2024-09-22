@@ -23,6 +23,7 @@ ALLOWED_HOSTS = [
 
 CORS_ALLOWED_ORIGINS = [
     'https://3000-andersh82-codex-4hpqxrlag5z.ws-eu116.gitpod.io',
+    'https://codex-api-3f893f5716ef.herokuapp.com',
     'http://localhost:3000',
     'http://127.0.0.1:8000',
 ]
