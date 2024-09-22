@@ -1,4 +1,4 @@
-from rest_framework import viewsets
+from rest_framework import viewsets, generics
 from .models import Post, Profile, Comment, Like
 from .serializers import PostSerializer, ProfileSerializer, CommentSerializer, LikeSerializer
 
@@ -21,3 +21,8 @@ class CommentViewSet(viewsets.ModelViewSet):
 class LikeViewSet(viewsets.ModelViewSet):
     queryset = Like.objects.all()
     serializer_class = LikeSerializer
+
+
+class PostListView(generics.ListAPIView):
+    queryset = Post.objects.all()
+    serializer_class = PostSerializer
